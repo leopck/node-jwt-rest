@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Service Client</title>
+</head>
+<body>
+    <h1>Product Service</h1>
+    <!-- Login Section -->
+    <div>
+        <label>Username: <input type="text" id="username"></label>
+        <label>Password: <input type="password" id="password"></label>
+        <button onclick="login(document.getElementById('username').value, document.getElementById('password').value)">Login</button>
+    </div>
+    <hr>
+    <!-- Product Actions -->
+    <button onclick="getProducts()">Get Products</button>
+    <button onclick="getProduct(1)">Get Product with ID 1</button>
+    <button onclick="addProduct()">Add Product</button>
+    <!-- Response Section -->
+    <div id="response"></div>
+    <!-- Client JavaScript -->
+    <script src="client.js"></script>
+</body>
+</html>
+
